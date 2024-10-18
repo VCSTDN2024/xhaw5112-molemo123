@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation and Side Bar</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <section class="header" >
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="six-month courses.html">Six-month courses</a>
+                    <ul>
+                        <li><a href="first aid.html">First aid</a></li>
+                        <li><a href="sewing.html">Sewing</a></li>
+                        <li><a href="landscaping.html">Landscaping</a></li>
+                        <li><a href="life skills.html">Life skills</a></li>
+                    </ul>
+                </li>                   
+                <li><a href="six-week courses.html">Six-week courses</a>
+                    <ul>
+                        <li><a href="first aid.html">First aid</a></li>
+                        <li><a href="sewing.html">Sewing</a></li>
+                        <li><a href="landscaping.html">Landscaping</a></li>
+                    </ul>
+                </li>
+                <li><a href="contactdetails.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+            <ul>         
+                <li class="hideOnMobile"><a href="home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="about us.html">About us</a></li>
+                <li class="hideOnMobile"><a href="six-month courses.html">Six-month courses</a></li>                   
+                <li class="hideOnMobile"><a href="six-week courses.html">Six-week courses</a></li>
+                <li class="hideOnMobile"><a href="contactdetails.html">Contact</a></li>
+                <li class="hideOnMobile"><a href="checkout.html">Checkout</a></li>
+                <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </ul>
+        </nav>
+        <img src="logo.png" alt="Empowering the Nation Logo" class="logo">
+        <script>
+           function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+           }
+           function hideSidebar(){
+             const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+           }
+        </script>
+    </section>
+    <img src="logo.png" alt="Empowering the Nation Logo" class="logo">
+    <footer style="background-color: rgb(12, 159, 90);">
+        <hr>
+        authors: Callon Holt, Ryan Ho Hip, Molemo Hlongwane</br>
+        &copy; 2024 copyright reserved<br>
+        <a href="mailto:calswalker@gmail.com">calswalker@gmail.com</a>
+    </footer>
+
+</body>
+</html>
+ 
